@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #0b1020;
+}
+
+@keyframes star-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-140px, 180px, 0);
+  }
+}
+
+@keyframes star-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+@keyframes shooting-star {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(-18deg) scaleX(0.2);
+  }
+  8% {
+    opacity: 0.95;
+  }
+  34% {
+    opacity: 0;
+    transform: translate3d(-34rem, 14rem, 0) rotate(-18deg) scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-34rem, 14rem, 0) rotate(-18deg) scaleX(1);
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-5 py-24 sm:px-8 sm:py-28 lg:px-10 lg:py-32;
+  }
+
+  .eyebrow {
+    @apply mb-4 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-cyanSoft/80;
+  }
+
+  .section-title {
+    @apply max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl;
+  }
+
+  .section-copy {
+    @apply mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg;
+  }
+
+  .glass-card {
+    @apply border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.075),rgba(255,255,255,0.026))] shadow-card backdrop-blur-2xl;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-cyanSoft px-5 py-3 text-sm font-bold text-slate-950 shadow-[0_18px_50px_rgba(103,232,249,0.16)] transition duration-500 hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-white focus:outline-none focus:ring-2 focus:ring-cyanSoft/40;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.055] px-5 py-3 text-sm font-bold text-slate-100 shadow-sm transition duration-500 hover:-translate-y-0.5 hover:scale-[1.02] hover:border-cyanSoft/35 hover:bg-white/[0.09] focus:outline-none focus:ring-2 focus:ring-cyanSoft/30;
+  }
+
+  .hairline {
+    @apply border-white/10;
+  }
+
+  .cosmic-panel {
+    @apply relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] shadow-card backdrop-blur-2xl;
+  }
+
+  .cosmic-panel::before {
+    content: '';
+    @apply pointer-events-none absolute inset-0 opacity-70;
+    background:
+      radial-gradient(circle at 18% 16%, rgba(103, 232, 249, 0.12), transparent 32%),
+      radial-gradient(circle at 86% 10%, rgba(167, 139, 250, 0.1), transparent 30%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
