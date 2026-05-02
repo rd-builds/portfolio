@@ -49,7 +49,7 @@ export default function Hero() {
         >
           <p className="eyebrow">
             <span className="h-1.5 w-1.5 rounded-full bg-cyanSoft shadow-[0_0_18px_rgba(103,232,249,0.65)]" />
-            Open for new missions
+            Open to Opportunities
           </p>
           <h1 className="max-w-5xl text-6xl font-semibold leading-[0.96] tracking-tight text-white sm:text-7xl lg:text-8xl">
             {portfolio.name}
@@ -63,16 +63,18 @@ export default function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href="#projects" className="button-primary">
-              Explore Missions <FiArrowDown />
-            </a>
-            <a href="#resume" className="button-secondary">
-              Preview Resume <FiEye />
-            </a>
-            <a href={portfolio.resumeUrl} download className="button-secondary">
-              Download Resume <FiDownload />
-            </a>
-          </div>
+          <a href="#projects" className="button-primary">
+            View Projects <FiArrowDown />
+          </a>
+
+          <a href="#contact" className="button-secondary">
+            Contact Me <FiEye />
+          </a>
+
+           <a href={portfolio.resumeUrl} download className="button-secondary">
+          Download Resume <FiDownload />
+        </a>
+        </div>
         </motion.div>
 
         <motion.div

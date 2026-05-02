@@ -22,16 +22,16 @@ import {
 } from 'react-icons/si'
 
 export const portfolio = {
-  name: 'Your Name',
-  roleWords: ['AI Developer', 'Web Developer', 'Full-Stack Learner', 'Problem Solver'],
+  name: 'Riya Duggal',
+  roleWords: ['Web Developer', 'Full-Stack Learner', 'Problem Solver','AI-Explorer'],
   intro:
-    'Student developer building practical AI tools and polished web experiences for real-world problems.',
-  email: 'you@example.com',
+     "First-year CSE student passionate about building real-world tech products, exploring web development and AI integration with a focus on impactful solutions.",
+  email: 'riyaduggal09@gmail.com',
   resumeUrl: '/resume.pdf',
   summary:
     'I am a student and AI/Web developer focused on building useful products with clean interfaces, dependable backends, and intelligent automation. I enjoy turning rough ideas into performant applications that are easy to use, easy to maintain, and ready to show in internship or job interviews.',
   profileImage:
-    'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=900&q=80',
+    "/profile.jpeg",
 }
 
 export const navItems = [
@@ -136,8 +136,8 @@ export const profiles = [
 ]
 
 export const statHighlights = [
-  { label: 'Projects', value: '12+' },
-  { label: 'Core Stack', value: 'AI + Web' },
+  { label: 'Projects', value: '4+' },
+  { label: 'AI + Web', value: 'Core Stack' },
   { label: 'Focus', value: 'Internship Ready' },
 ]
 
