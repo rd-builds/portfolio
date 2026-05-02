@@ -1,6 +1,6 @@
 # 🚀 Riya Duggal — Developer Portfolio
 
-🌐 **Live Demo:** https://your-site.netlify.app
+🌐 **Live Demo:** https://portfolio-rduggal0903-3556s-projects.vercel.app/
 
 ---
 
