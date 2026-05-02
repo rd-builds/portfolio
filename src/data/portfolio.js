@@ -23,15 +23,18 @@ import {
 
 export const portfolio = {
   name: 'Riya Duggal',
-  roleWords: ['Web Developer', 'Full-Stack Learner', 'Problem Solver','AI-Explorer'],
+  roleWords: ['Web Developer', 'AI Explorer', 'Full-Stack Learner', 'Problem Solver'],
+
   intro:
-     "First-year CSE student passionate about building real-world tech products, exploring web development and AI integration with a focus on impactful solutions.",
+    "First-year CSE student building real-world AI and web applications, focused on clean design, practical solutions, and impactful user experiences.",
+
   email: 'riyaduggal09@gmail.com',
   resumeUrl: '/resume.pdf',
+
   summary:
-    'I am a student and AI/Web developer focused on building useful products with clean interfaces, dependable backends, and intelligent automation. I enjoy turning rough ideas into performant applications that are easy to use, easy to maintain, and ready to show in internship or job interviews.',
-  profileImage:
-    "/profile.jpeg",
+    'I build practical AI and web applications with clean interfaces and reliable functionality. I enjoy turning ideas into working products that are simple, efficient, and ready for real-world use.',
+
+  profileImage: "/profile.jpeg",
 }
 
 export const navItems = [
@@ -45,94 +48,87 @@ export const navItems = [
 
 export const projects = [
   {
-    title: 'AI Study Assistant',
-    image:
-      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
-    description:
-      'Transforms long study material into concise notes, summaries, and quiz prompts so students can revise faster with less context switching.',
-    stack: ['React', 'OpenAI API', 'FastAPI', 'MongoDB'],
-    github: 'https://github.com/',
-    demo: 'https://vercel.com/',
+    title: "Brand Website Generator",
+    description: "Automatically generates modern, responsive brand websites from user inputs.",
+    stack: ["React", "Node.js"],
+    github: "https://github.com/rd-builds/brand-website-generator.git",
+    demo: "https://brand-website-generator.vercel.app/",
+    image: "/1.png"
   },
   {
-    title: 'Smart Portfolio Builder',
-    image:
-      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
-    description:
-      'A guided portfolio generator that structures projects, skills, achievements, and resume links into a fast responsive web presence.',
-    stack: ['Vite', 'Tailwind CSS', 'Framer Motion'],
-    github: 'https://github.com/',
-    demo: 'https://vercel.com/',
+    title: "Repo Explainer",
+    description: "Analyzes GitHub repositories and explains code structure using AI.",
+    stack: ["AI", "NLP"],
+    github: "https://github.com/rd-builds/repo-explainer.git",
+    image: "/3.png"
   },
   {
-    title: 'ML Model Dashboard',
-    image:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
-    description:
-      'A monitoring interface for model metrics, experiment notes, and dataset snapshots that helps teams compare runs clearly.',
-    stack: ['Python', 'TensorFlow', 'React', 'Charts'],
-    github: 'https://github.com/',
-    demo: 'https://vercel.com/',
+    title: "Portfolio Website",
+    description: "Interactive personal portfolio with animations and modern UI design.",
+    stack: ["React", "Tailwind"],
+    github: "https://github.com/rd-builds/portfolio.git",
+    image: "/2.png"
   },
   {
-    title: 'Campus Event Hub',
-    image:
-      'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80',
-    description:
-      'Centralizes registrations, event updates, and volunteer coordination into a simple mobile-first experience for student communities.',
-    stack: ['React', 'Node.js', 'Firebase', 'Tailwind'],
-    github: 'https://github.com/',
-    demo: 'https://vercel.com/',
-  },
+    title: "AI Research Analyzer",
+    description: "Extracts key insights and summaries from research papers using AI.",
+    stack: ["Python", "AI"],
+    github: "https://github.com/rd-builds/AI-Research-Analyzer.git",
+    image: "/4.png"
+  }
 ]
 
 export const skills = [
   {
     category: 'Languages',
     items: [
-      { label: 'Python', icon: FaPython },
+      { label: 'HTML', icon: FaCode },
+      { label: 'CSS', icon: FaCode },
       { label: 'JavaScript', icon: SiJavascript },
-      { label: 'C/C++', icon: FaCode },
+      { label: 'Python', icon: FaPython },
     ],
   },
   {
     category: 'Frameworks',
     items: [
       { label: 'React', icon: FaReact },
+      { label: 'Node.js', icon: SiFastapi },
       { label: 'Tailwind CSS', icon: SiTailwindcss },
-      { label: 'FastAPI', icon: SiFastapi },
     ],
   },
   {
     category: 'Tools',
     items: [
+      { label: 'Git', icon: FaCodeBranch },
       { label: 'GitHub', icon: FaGithub },
+      { label: 'VS Code', icon: FaCode },
       { label: 'Vercel', icon: SiVercel },
-      { label: 'MongoDB', icon: SiMongodb },
     ],
   },
   {
     category: 'AI/ML',
     items: [
-      { label: 'OpenAI', icon: SiOpenai },
-      { label: 'TensorFlow', icon: SiTensorflow },
-      { label: 'PyTorch', icon: SiPytorch },
+      { label: 'Azure AI Fundamentals', icon: SiOpenai },
+      { label: 'Computer Vision', icon: SiOpenai },
+      { label: 'NLP', icon: SiOpenai },
+      { label: 'Chatbots', icon: SiOpenai },
     ],
   },
 ]
 
 export const achievements = [
-  'Microsoft Azure AI Fundamentals certification preparation and applied AI projects.',
-  'Microsoft Azure Fundamentals AZ-900 certification preparation and cloud fundamentals.',
-  'Built and presented AI/Web projects at college events and technical showcases.',
-  'Active practice in competitive programming and data science problem solving.',
+  'Completed Microsoft Azure AI Fundamentals (AI-900) certification.',
+  'Completed Microsoft Azure Fundamentals (AZ-900) certification.',
+  'Actively participating in hackathons and tech events.',
+  'Exploring startup ecosystems and product development.',
+  ' Continuous self-learning in web and AI.',
 ]
 
 export const profiles = [
-  { label: 'GitHub', href: 'https://github.com/', icon: FaGithub },
-  { label: 'LinkedIn', href: 'https://linkedin.com/', icon: FaLinkedin },
-  { label: 'Kaggle', href: 'https://kaggle.com/', icon: FaKaggle },
-  { label: 'Codeforces', href: 'https://codeforces.com/', icon: SiCodeforces },
+  { label: 'GitHub', href: 'https://github.com/rd-builds', icon: FaGithub },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/riyaduggal/', icon: FaLinkedin },
+  { label: 'Kaggle', href: 'https://www.kaggle.com/riyaduggal/code', icon: FaKaggle },
+  { label: 'Codeforces', href: 'https://codeforces.com/profile/rduggal09', icon: SiCodeforces },
 ]
 
 export const statHighlights = [

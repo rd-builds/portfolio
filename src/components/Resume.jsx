@@ -9,7 +9,7 @@ export default function Resume() {
       <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
         <div className="lg:sticky lg:top-28">
           <SectionHeader
-            eyebrow="Flight Record"
+            eyebrow="Resume Section"
             title="Preview the resume directly here."
             copy="View it inline, open the full PDF in a new tab, or download a copy for recruiters and applications."
           />

@@ -6,10 +6,10 @@ export default function Skills() {
   return (
     <section id="skills" className="section-shell">
       <SectionHeader
-        eyebrow="Command Toolkit"
-        title="Systems I use to ship fast, clean, and intelligent apps."
-        copy="A compact toolkit across frontend, backend, deployment, and AI workflows."
-      />
+      eyebrow="Skills"
+      title="Tools and technologies I use to build real-world web and AI projects."
+      copy="Focused on web development, AI concepts, and building real-world projects."
+    />
 
       <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {skills.map((group, index) => (

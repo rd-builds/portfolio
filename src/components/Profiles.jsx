@@ -6,7 +6,7 @@ export default function Profiles() {
   return (
     <section id="links" className="section-shell">
       <SectionHeader
-        eyebrow="Signal Links"
+        eyebrow="Coding Profiles & Links"
         title="Find my code, data work, and professional updates."
       />
 

@@ -6,7 +6,7 @@ export default function Achievements() {
   return (
     <section id="achievements" className="section-shell">
       <SectionHeader
-        eyebrow="Flight Log"
+        eyebrow="Participation/Achievements"
         title="Certifications, events, and steady technical practice."
         copy="A concise record of cloud fundamentals, AI learning, technical showcases, and coding consistency."
       />
